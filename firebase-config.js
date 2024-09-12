@@ -5,7 +5,6 @@ import {
   FIREBASE_PROJECT_ID,
   FIREBASE_AUTH_DOMAIN,
   FIREBASE_MESSAGING_SENDER_ID,
-  FIREBASE_MESSUREMENT_ID,
 } from "@env";
 import { initializeApp, getApp, getApps } from "firebase/app";
 import {
@@ -24,10 +23,7 @@ const firebaseConfig = {
   storageBucket: FIREBASE_STORAGE_BUCKET,
   messagingSenderId: FIREBASE_MESSAGING_SENDER_ID,
   appId: FIREBASE_APP_ID,
-  measurementId: FIREBASE_MESSUREMENT_ID,
 };
-
-console.log(firebaseConfig);
 
 if (getApps().length === 0) {
   initializeApp(firebaseConfig);

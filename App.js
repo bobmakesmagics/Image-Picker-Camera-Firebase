@@ -8,7 +8,7 @@ import {
   SafeAreaView,
 } from "react-native";
 import * as ImagePicker from "expo-image-picker";
-import { listFiles, uploadToFirebase } from "./firebase-config";
+import { listFiles, uploadToFirebase } from "./firebase-config.js";
 import { useState, useEffect } from "react";
 import MyFilesList from "./components/MyList";
 
@@ -87,6 +87,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
     backgroundColor: "#fff",
   },
 });
